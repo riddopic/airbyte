@@ -80,8 +80,8 @@ import org.slf4j.LoggerFactory;
 
 public class DatabaseConfigPersistence implements ConfigPersistence {
 
-  // TODO parker: change back to private
-  public final ExceptionWrappingDatabase database;
+
+  private final ExceptionWrappingDatabase database;
   private final JsonSecretsProcessor jsonSecretsProcessor;
   private static final Logger LOGGER = LoggerFactory.getLogger(DatabaseConfigPersistence.class);
 
