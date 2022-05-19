@@ -9,7 +9,7 @@ export const CustomSelect = styled(Select)<
 >`
   & > .react-select__control {
     height: ${({ $withBorder }) => ($withBorder ? 31 : 36)}px;
-
+    min-width: 350px;
     box-shadow: none;
     border: 1px solid
       ${({ theme, $withBorder, $error }) =>
