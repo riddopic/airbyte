@@ -103,10 +103,7 @@ const JobItem: React.FC<IProps> = ({ shortInfo, ...props }) => {
             {isOpen ? (
               isJobEntity(props) ? (
                 <>
-                  <ErrorDetails
-                    attempts={props.job.attempts}
-                    setLogTimestamp={setLogTimestamp}
-                  />
+                  <ErrorDetails attempts={props.job.attempts} setLogTimestamp={setLogTimestamp} />
                   <JobLogs id={jobMeta.id} jobIsFailed={isFailed} logTimestamp={logTimestamp} />
                 </>
               ) : (
